@@ -1,0 +1,210 @@
+const _getCatImg = () => {
+  const randomNum = () => {
+    return Math.floor(Math.random() * 100000);
+  };
+  const url = "https://source.unsplash.com/collection/139386/100x100/?sig=";
+  return url + randomNum();
+};
+
+let topSentinelPreviousY = 0;
+let topSentinelPreviousRatio = 0;
+let bottomSentinelPreviousY = 0;
+let bottomSentinelPreviousRatio = 0;
+
+let listSize = 20;
+let DBSize = 200;
+
+const initDB = num => {
+	const db = [];
+  // for (let i = 0; i < num; i++) {
+  // 	db.push({
+  //   	catCounter: i,
+  //     title: `cat image number ${i}`,
+  //     imgSrc: _getCatImg()
+  //   })
+  // }
+  var text = "Geo-politics, like modern societies, are becoming more isolated. In the wake of Bretton-Woods, globalism boomed. That time has come to an end. Anti-immigration and nationalism...";// have taken root across the West, iconized by President Donald J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
+  db.push({fileCount:'1', title: 'Brexit',articleSrc: 'articles/2021/01/Brexit.html',preview: text, date: "January 1, 2021"});
+  var text2 = "America has experienced a riot, an attempted coup d'etat, and drawn articles of impeachment for the second time all within the first two...";
+  db.push({fileCount:'2', title: 'Article2',articleSrc: 'articles/2021/02/Diversity.html',preview: text2, date: "February 1, 2021"});
+  // db.push({fileCount:'Article3', title: 'Article3',articleSrc: 'foo.html',imgSrc: 'foo.png'});
+  // db.push({fileCount:'Article4', title: 'Article4',articleSrc: 'foo2.html',imgSrc: 'foo2.png'});
+  // db.push({fileCount:'Article5', title: 'Article5',articleSrc: 'foo.html',imgSrc: 'foo.png'});
+  // db.push({fileCount:'Article6', title: 'Article6',articleSrc: 'foo2.html',imgSrc: 'foo2.png'});
+  // db.push({fileCount:'Article7', title: 'Article7',articleSrc: 'foo.html',imgSrc: 'foo.png'});
+  // db.push({fileCount:'Article8', title: 'Article8',articleSrc: 'foo2.html',imgSrc: 'foo2.png'});
+  return db;
+}
+
+let DB = [];
+
+let currentIndex = 0;
+
+const initList = num => {
+	const container = document.querySelector(".cat-list");
+
+  for (let i = 0; i < num; i++) {
+  	const tile = document.createElement("LI");
+    console.log(DB[i].articleSrc)
+    tile.setAttribute("class", "cat-tile");
+    tile.setAttribute("id", "cat-tile-" + i);
+    const title = document.createElement("a");
+    title.setAttribute('href', DB[i].articleSrc);
+    const t = document.createTextNode(DB[i].title);
+    title.appendChild(t);
+    tile.appendChild(title);
+    const prev = document.createElement("p")
+    const p = document.createTextNode(DB[i].preview)
+    prev.appendChild(p)
+    tile.appendChild(prev)
+    // const img = document.createElement("IMG");
+    // img.setAttribute("src", DB[i].imgSrc);
+    // tile.appendChild(img);
+    const date = document.createElement("H3");
+    const d = document.createTextNode(DB[i].date);
+    date.appendChild(d);
+    tile.appendChild(date);
+
+  	container.appendChild(tile);
+  }
+
+}
+
+const getSlidingWindow = isScrollDown => {
+	const increment = listSize / 2;
+	let firstIndex;
+
+  if (isScrollDown) {
+  	firstIndex = currentIndex + increment;
+  } else {
+    firstIndex = currentIndex - increment;
+  }
+
+  if (firstIndex < 0) {
+  	firstIndex = 0;
+  }
+
+  return firstIndex;
+}
+
+const recycleDOM = firstIndex => {
+	for (let i = 0; i < listSize; i++) {
+  	const tile = document.querySelector("#cat-tile-" + i);
+    tile.firstElementChild.innerText = DB[i + firstIndex].title;
+    tile.lastChild.setAttribute("src", DB[i + firstIndex].imgSrc);
+  }
+}
+
+const getNumFromStyle = numStr => Number(numStr.substring(0, numStr.length - 2));
+
+const adjustPaddings = isScrollDown => {
+	const container = document.querySelector(".cat-list");
+  const currentPaddingTop = getNumFromStyle(container.style.paddingTop);
+  const currentPaddingBottom = getNumFromStyle(container.style.paddingBottom);
+  const remPaddingsVal = 170 * (listSize / 2);
+	if (isScrollDown) {
+  	container.style.paddingTop = currentPaddingTop + remPaddingsVal + "px";
+    container.style.paddingBottom = currentPaddingBottom === 0 ? "0px" : currentPaddingBottom - remPaddingsVal + "px";
+  } else {
+  	container.style.paddingBottom = currentPaddingBottom + remPaddingsVal + "px";
+    container.style.paddingTop = currentPaddingTop === 0 ? "0px" : currentPaddingTop - remPaddingsVal + "px";
+
+  }
+}
+
+const topSentCallback = entry => {
+	if (currentIndex === 0) {
+		const container = document.querySelector(".cat-list");
+  	container.style.paddingTop = "0px";
+  	container.style.paddingBottom = "0px";
+  }
+
+  const currentY = entry.boundingClientRect.top;
+  const currentRatio = entry.intersectionRatio;
+  const isIntersecting = entry.isIntersecting;
+
+  // conditional check for Scrolling up
+  if (
+    currentY > topSentinelPreviousY &&
+    isIntersecting &&
+    currentRatio >= topSentinelPreviousRatio &&
+    currentIndex !== 0
+  ) {
+    const firstIndex = getSlidingWindow(false);
+    adjustPaddings(false);
+    recycleDOM(firstIndex);
+    currentIndex = firstIndex;
+  }
+
+  topSentinelPreviousY = currentY;
+  topSentinelPreviousRatio = currentRatio;
+}
+
+const botSentCallback = entry => {
+	if (currentIndex === DBSize - listSize) {
+  	return;
+  }
+  const currentY = entry.boundingClientRect.top;
+  const currentRatio = entry.intersectionRatio;
+  const isIntersecting = entry.isIntersecting;
+
+  // conditional check for Scrolling down
+  if (
+    currentY < bottomSentinelPreviousY &&
+    currentRatio > bottomSentinelPreviousRatio &&
+    isIntersecting
+  ) {
+    const firstIndex = getSlidingWindow(true);
+    adjustPaddings(true);
+    recycleDOM(firstIndex);
+    currentIndex = firstIndex;
+  }
+
+  bottomSentinelPreviousY = currentY;
+  bottomSentinelPreviousRatio = currentRatio;
+}
+
+const initIntersectionObserver = () => {
+  const options = {
+  	/* root: document.querySelector(".cat-list") */
+  }
+
+  const callback = entries => {
+    entries.forEach(entry => {
+      if (entry.target.id === 'cat-tile-0') {
+        topSentCallback(entry);
+      } else if (entry.target.id === `cat-tile-${listSize - 1}`) {
+        botSentCallback(entry);
+      }
+    });
+  }
+
+  var observer = new IntersectionObserver(callback, options);
+  observer.observe(document.querySelector("#cat-tile-0"));
+  observer.observe(document.querySelector(`#cat-tile-${listSize - 1}`));
+}
+
+const start = () => {
+	//const input1 = document.querySelector("#input1");
+  //const input2 = document.querySelector("#input2");
+  //if (!input1.value) {
+  	DBSize = 3;
+    //input1.value = DBSize;
+  //} else {
+  	//DBSize = input1.value;
+  //}
+
+  //if (input2.value < 20) {
+  	listSize = 20;
+    //input2.value = 20;
+  //} else {
+  	//listSize = input2.value;
+  //}
+  DB = initDB(DBSize);
+	initList(listSize);
+	initIntersectionObserver();
+
+  //input1.style.display = "none";
+  //input2.style.display = "none";
+  //document.querySelector("#start-btn").style.display = "none";
+}
