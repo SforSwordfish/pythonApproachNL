@@ -23,7 +23,7 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
-  var text = "Geo-politics, like modern societies, are becoming more isolated. In the wake of Bretton-Woods, globalism boomed. That time has come to an end. Anti-immigration and nationalism...";// have taken root across the West, iconized by President Donald J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
+  var text = "Geo-politics, like modern societies, are becoming more isolated. In the wake of Bretton-Woods, globalism boomed. That time has come to an end. Anti-immigration and nationalism..."// have taken root across the West, iconized by President Donald J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
   db.push({fileCount:'1', title: 'Brexit',articleSrc: 'articles/2021/01/Brexit.html',preview: text, date: "January 1, 2021"});
   var text2 = "America has experienced a riot, an attempted coup d'etat, and drawn articles of impeachment for the second time all within the first two...";
   db.push({fileCount:'2', title: 'Diversity',articleSrc: 'articles/2021/02/Diversity.html',preview: text2, date: "February 1, 2021"});
@@ -54,15 +54,17 @@ const initList = num => {
     title.appendChild(t);
     tile.appendChild(title);
     const prev = document.createElement("p")
-    const p = document.createTextNode(DB[i].preview)
-    prev.appendChild(p)
+    // const p = document.createTextNode(DB[i].preview)
+    prev.textContent = DB[i].preview
+    // prev.appendChild(p)
     tile.appendChild(prev)
     // const img = document.createElement("IMG");
     // img.setAttribute("src", DB[i].imgSrc);
     // tile.appendChild(img);
-    const date = document.createElement("H3");
-    const d = document.createTextNode(DB[i].date);
-    date.appendChild(d);
+    const date = document.createElement("h3");
+    date.textContent = DB[i].date
+    // const d = document.createTextNode(DB[i].date);
+    // date.appendChild(d);
     tile.appendChild(date);
 
   	container.appendChild(tile);

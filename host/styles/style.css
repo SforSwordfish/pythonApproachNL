@@ -19,11 +19,18 @@ body { height: 100% !important; margin: auto !important; padding: 0 !important; 
 a {
   margin: 100px 0px 0px 20px;
 }
+
 p {
+  /* word-break:break-all; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  overflow: hidden;
+  width: 95%;
+  height: 48px;
   margin: 5px 0px 0px 20px;
   font-size: 16px;
-  line-height: 1;
-  letter-spacing: 1px;
+  /* line-height: 1;
+  letter-spacing: 1px; */
 }
 li {
   font-size: 16px;
@@ -32,7 +39,10 @@ li {
 }
 
 h3 {
-  margin: 8px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0px;
 }
 
 
@@ -76,6 +86,7 @@ img {
 
 .cat-tile {
   /* margin: 10px 0; */
+  position: relative;
   margin: 15px auto;
   height: 120px;
   width: 95%;
