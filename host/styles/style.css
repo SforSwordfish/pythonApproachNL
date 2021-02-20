@@ -17,6 +17,7 @@ body { height: 100% !important; margin: auto !important; padding: 0 !important; 
   text-align: center;
 } */
 a {
+  padding-top: 10px;
   margin: 100px 0px 0px 20px;
 }
 
@@ -26,7 +27,7 @@ p {
   /* white-space: nowrap; */
   overflow: hidden;
   width: 95%;
-  height: 48px;
+  height: 65px;
   margin: 5px 0px 0px 20px;
   font-size: 16px;
   /* line-height: 1;
@@ -40,7 +41,7 @@ li {
 
 h3 {
   margin: 0px 0px 0px 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   position: absolute;
   bottom: 0px;
 }
@@ -107,7 +108,7 @@ a[x-apple-data-detectors] {
 
 /* These rules set the link and hover states, making it clear that links are, in fact, links. */
 /* Embrace established conventions like underlines on links to keep emails accessible. */
-a {font-size: 20px; color: #B200FD; font-weight: 600; text-decoration: underline; }
+a {font-size: 20px; color: #999897; font-weight: 600; text-decoration: underline; }
 a:hover { color: #000000 !important; text-decoration: none !important; }
 
 /* These rules adjust styles for desktop devices, keeping the email responsive for users. */
