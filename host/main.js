@@ -23,11 +23,15 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text3 = "2021 has been cold. Literally. Texas faced record low temperatures that devolved into an utter catastrophe. Many Texans were without electricity and water for days. Others faced rolling blackouts and some navigated the storm only to..."
+  db.push({fileCount:'1', title: 'Volume III',articleSrc: 'articles/2021/03/Cold.html',preview: text3, date: "March 1, 2021"});
+
   var text2 = "America has experienced a riot, an attempted coup d'etat, and drawn articles of impeachment for the second time all within the first two weeks. To some, this may seem as a complete and total surprise...";
   db.push({fileCount:'2', title: 'Volume II',articleSrc: 'articles/2021/02/Diversity.html',preview: text2, date: "February 1, 2021"});
 
   var text = "Geo-politics, like modern societies, are becoming more isolated. In the wake of Bretton-Woods, globalism boomed. That time has come to an end. Anti-immigration and nationalism have taken root across the West, iconized by President Donald..."// J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
   db.push({fileCount:'1', title: 'Volume I',articleSrc: 'articles/2021/01/Brexit.html',preview: text, date: "January 1, 2021"});
+
   return db;
 }
 
