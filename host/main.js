@@ -24,7 +24,7 @@ const initDB = num => {
   //   })
   // }
   var text3 = "2021 has been cold. Literally. Texas faced record low temperatures that devolved into an utter catastrophe. Many Texans were without electricity and water for days. Others faced rolling blackouts and some navigated the storm only to..."
-  db.push({fileCount:'3', title: 'Volume III',articleSrc: 'articles/2021/03/Cold.html',preview: text3, date: "March 1, 2021"});
+  db.push({fileCount:'3', title: 'Volume III',articleSrc: 'articles/2021/03/cold.html',preview: text3, date: "March 1, 2021"});
 
   var text2 = "America has experienced a riot, an attempted coup d'etat, and drawn articles of impeachment for the second time all within the first two weeks. To some, this may seem as a complete and total surprise...";
   db.push({fileCount:'2', title: 'Volume II',articleSrc: 'articles/2021/02/Diversity.html',preview: text2, date: "February 1, 2021"});
