@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "Short term trading and capital markets are the new reality TV. There’s been a flood of capital to crypto currencies and alternative assets like NFT, that is really reminiscent of Tulip Mania..."// J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
+  db.push({fileCount:'4', title: 'Volume IV',articleSrc: 'articles/2021/03/pt2/invest.html',preview: text, date: "March 15, 2021"});
+
   var text3 = "2021 has been cold. Literally. Texas faced record low temperatures that devolved into an utter catastrophe. Many Texans were without electricity and water for days. Others faced rolling blackouts and some navigated the storm only to..."
   db.push({fileCount:'3', title: 'Volume III',articleSrc: 'articles/2021/03/cold.html',preview: text3, date: "March 1, 2021"});
 
