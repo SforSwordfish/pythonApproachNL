@@ -23,6 +23,10 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+
+  var text = "The US relationship with China is transforming from frenemies to full-blown adversaries. This has been bubbling beneath the surface for a while, Donald Trump kicked it into the spotlight..."// J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
+  db.push({fileCount:'5', title: 'Volume V',articleSrc: 'articles/2021/04/pt1/china.html',preview: text, date: "April 1, 2021"});
+
   var text = "Short term trading and capital markets are the new reality TV. There's been a flood of capital to crypto currencies and alternative assets like NFT, that is really reminiscent of Tulip Mania..."// J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
   db.push({fileCount:'4', title: 'Volume IV',articleSrc: 'articles/2021/03/pt2/invest.html',preview: text, date: "March 15, 2021"});
 
