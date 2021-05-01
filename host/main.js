@@ -23,9 +23,11 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "In 2008, America was experiencing a financial crisis and the collapse of the United States housing market. Flash forward 13 years, and America is experiencing another housing..."// But, great leaders will always be empathetic. No matter how great of a leader"
+  db.push({fileCount:'7', title: 'Volume VII',articleSrc: 'articles/2021/05/pt1/housing.html',preview: text, date: "May 1, 2021"});
 
   var text = "There's something captivating about amazing leaders. They're courageous but considerate. They're forceful but respectful. Being charismatic is a balancing act, and it comes in many forms..."// But, great leaders will always be empathetic. No matter how great of a leader"
-  db.push({fileCount:'5', title: 'Volume VI',articleSrc: 'articles/2021/04/pt2/empathy.html',preview: text, date: "April 15, 2021"});
+  db.push({fileCount:'6', title: 'Volume VI',articleSrc: 'articles/2021/04/pt2/empathy.html',preview: text, date: "April 15, 2021"});
 
   var text = "The US relationship with China is transforming from frenemies to full-blown adversaries. This has been bubbling beneath the surface for a while, Donald Trump kicked it into the spotlight..."// J. Trump in the U.S. and similar ideologues stretching across Europe within the U.K., Poland, and Hungary."
   db.push({fileCount:'5', title: 'Volume V',articleSrc: 'articles/2021/04/pt1/china.html',preview: text, date: "April 1, 2021"});
