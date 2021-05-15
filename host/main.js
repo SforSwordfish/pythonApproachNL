@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "On May 7th 2021, a group of hackers thought to be Russia linked known as DarkSide shut down a pipeline that supplies fuel from Texas to New Jersey. DarkSide operates as a hack-for-fire, loaning out their ransomware..."// But, great leaders will always be empathetic. No matter how great of a leader"
+  db.push({fileCount:'8', title: 'Volume VIII',articleSrc: 'articles/2021/05/pt2/panic.html',preview: text, date: "May 15, 2021"});
+
   var text = "In 2008, America was experiencing a financial crisis and the collapse of the United States housing market. Flash forward 13 years, and America is experiencing another housing..."// But, great leaders will always be empathetic. No matter how great of a leader"
   db.push({fileCount:'7', title: 'Volume VII',articleSrc: 'articles/2021/05/pt1/housing.html',preview: text, date: "May 1, 2021"});
 
