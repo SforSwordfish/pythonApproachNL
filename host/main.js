@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "Humanity's ability to agree on a set of rules, principles, and values is unique within the animal kingdom. We’ve shared common beliefs surrounding gods, morals, values, social hierarchies, corporations, governments..."//, and this list goes on.
+  db.push({fileCount:'9', title: 'Volume IX',articleSrc: 'articles/2021/06/pt1/going_digital.html',preview: text, date: "June 1, 2021"});
+
   var text = "On May 7th 2021, a group of hackers thought to be Russia linked known as DarkSide shut down a pipeline that supplies fuel from Texas to New Jersey. DarkSide operates as a hack-for-fire, loaning out their ransomware..."// But, great leaders will always be empathetic. No matter how great of a leader"
   db.push({fileCount:'8', title: 'Volume VIII',articleSrc: 'articles/2021/05/pt2/panic.html',preview: text, date: "May 15, 2021"});
 
