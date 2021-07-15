@@ -23,6 +23,10 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+
+  var text = "No matter how prepared you are, there's one thing that can still send your life into a financial spiral: the diagnosis of a chronic medical condition. The American health care industry is seemingly an unconquerable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
+  db.push({fileCount:'11', title: 'Volume XI',articleSrc: 'articles/2021/07/pt1/interlude.html',preview: text, date: "June 15, 2021"});
+
   var text = "No matter how prepared you are, there’s one thing that can still send your life into a financial spiral: the diagnosis of a chronic medical condition. The American health care industry is seemingly an unconquerable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'10', title: 'Volume X',articleSrc: 'articles/2021/06/pt2/healthcare.html',preview: text, date: "June 15, 2021"});
 
