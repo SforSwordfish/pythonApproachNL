@@ -27,8 +27,8 @@ const initDB = num => {
   var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'12', title: 'Volume XI',articleSrc: 'articles/2021/07/pt2/the_american_reality.html',preview: text, date: "July 15, 2021"});
 
-  var text = "There's something captivating about amazing leaders. They're courageous but considerate. They're forceful but respectful. Being charismatic is a balancing act, and it comes in many forms. But, great leaders will..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
-  db.push({fileCount:'11', title: 'A brief interlude...',articleSrc: 'articles/2021/74/pt1/empathy.html',preview: text, date: "July 1, 2021"});
+  var text = "The past year and a half has been the most mentally and financially challenging in recent memory. But, the end is near...."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
+  db.push({fileCount:'11', title: 'A brief interlude...',articleSrc: 'articles/2021/07/pt1/interlude.html',preview: text, date: "July 1, 2021"});
 
   var text = "No matter how prepared you are, there's one thing that can still send your life into a financial spiral: the diagnosis of a chronic medical condition. The American health care industry is seemingly an unconquerable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'10', title: 'Volume X',articleSrc: 'articles/2021/06/pt2/healthcare.html',preview: text, date: "June 15, 2021"});
