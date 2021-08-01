@@ -24,7 +24,7 @@ const initDB = num => {
   //   })
   // }
 
-  var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
+  var text = "As in, if it’s only a year old, you could sell it for more than you paid for it. Naturally as a scavenger for a good deal, I went to find out. The rumors were true. After some back and forth haggling, I was looking at... "// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'13', title: 'Volume XII',articleSrc: 'articles/2021/08/pt1/inflation.html',preview: text, date: "August 1, 2021"});
 
   var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
