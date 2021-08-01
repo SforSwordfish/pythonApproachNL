@@ -25,6 +25,9 @@ const initDB = num => {
   // }
 
   var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
+  db.push({fileCount:'13', title: 'Volume XII',articleSrc: 'articles/2021/08/pt1/inflation.html',preview: text, date: "August 1, 2021"});
+
+  var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'12', title: 'Volume XI',articleSrc: 'articles/2021/07/pt2/the_american_reality.html',preview: text, date: "July 15, 2021"});
 
   var text = "The past year and a half has been the most mentally and financially challenging in recent memory. But, the end is near...."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
