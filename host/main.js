@@ -24,7 +24,7 @@ const initDB = num => {
   //   })
   // }
 
-  var text = "The Fed has deep pockets. The Federal Reserve (“The Fed”) is now powerful enough to be considered the fourth branch of the American Government...."
+  var text = "The Fed has deep pockets. The Federal Reserve ('The Fed') is now powerful enough to be considered the fourth branch of the American Government...."
   db.push({fileCount:'14', title: 'The Fourth Branch',articleSrc: 'articles/2021/08/pt2/the_fourth_branch.html',preview: text, date: "August 1, 2021"});
 
   var text = "As in, if it'ss only a year old, you could sell it for more than you paid for it. Naturally as a scavenger for a good deal, I went to find out. The rumors were true. After some back and forth haggling, I was looking at... "// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
