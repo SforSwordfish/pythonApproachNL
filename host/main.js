@@ -23,9 +23,11 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "A serious problem has been unfolding at the feet of American politicians. All the signs have been here for quite a while now. Soon, I'm concerned, the problem will become too big to contain..."
+  db.push({fileCount:'15', title: 'Dis-Trust',articleSrc: 'articles/2021/01/pt1/dis_trust.html',preview: text, date: "September 1, 2021"});
 
   var text = "The Fed has deep pockets. The Federal Reserve ('The Fed') is now powerful enough to be considered the fourth branch of the American Government...."
-  db.push({fileCount:'14', title: 'The Fourth Branch',articleSrc: 'articles/2021/08/pt2/the_fourth_branch.html',preview: text, date: "August 1, 2021"});
+  db.push({fileCount:'14', title: 'The Fourth Branch',articleSrc: 'articles/2021/08/pt2/the_fourth_branch.html',preview: text, date: "August 15, 2021"});
 
   var text = "As in, if it'ss only a year old, you could sell it for more than you paid for it. Naturally as a scavenger for a good deal, I went to find out. The rumors were true. After some back and forth haggling, I was looking at... "// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'13', title: 'Volume XII',articleSrc: 'articles/2021/08/pt1/inflation.html',preview: text, date: "August 1, 2021"});
