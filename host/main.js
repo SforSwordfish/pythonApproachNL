@@ -23,8 +23,12 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "Four days ago, marked the 20-year anniversary since the September 11 attacks, almost 3000 lives lost in a single day. American politics and strategic goals shifted in a fraction of a second. 45 days after the..."
+  db.push({fileCount:'16', title: 'A New Sherrif',articleSrc: 'articles/2021/09/pt2/a_new_sherrif.html',preview: text, date: "September 15, 2021"});
+
+
   var text = "A serious problem has been unfolding at the feet of American politicians. All the signs have been here for quite a while now. Soon, I'm concerned, the problem will become too big to contain..."
-  db.push({fileCount:'15', title: 'Dis-Trust',articleSrc: 'articles/2021/01/pt1/dis_trust.html',preview: text, date: "September 1, 2021"});
+  db.push({fileCount:'15', title: 'Dis-Trust',articleSrc: 'articles/2021/09/pt1/dis_trust.html',preview: text, date: "September 1, 2021"});
 
   var text = "The Fed has deep pockets. The Federal Reserve ('The Fed') is now powerful enough to be considered the fourth branch of the American Government...."
   db.push({fileCount:'14', title: 'The Fourth Branch',articleSrc: 'articles/2021/08/pt2/the_fourth_branch.html',preview: text, date: "August 15, 2021"});
