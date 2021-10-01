@@ -23,6 +23,10 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+
+  var text = "We've all heard that good help is hard to find. I don't believe that. Good help is easy to find but hard to keep. The labor market has changed faster than many expected. A wave of resignations has taken the country by storm..."
+  db.push({fileCount:'17', title: 'Good Help is Hard To Keep',articleSrc: 'articles/2021/10/pt1/good_help.html',preview: text, date: "October 1, 2021"});
+
   var text = "Four days ago, marked the 20-year anniversary since the September 11 attacks, almost 3000 lives lost in a single day. American politics and strategic goals shifted in a fraction of a second. 45 days after the..."
   db.push({fileCount:'16', title: 'A New Sherriff',articleSrc: 'articles/2021/09/pt2/a_new_sherriff.html',preview: text, date: "September 15, 2021"});
 
