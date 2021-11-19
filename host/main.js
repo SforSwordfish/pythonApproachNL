@@ -30,7 +30,7 @@ const initDB = num => {
   var text = "America is a relatively  young country that's rich in innovation. History books are filled with industrialists and innovators from Eli Whitney to Robert Noyce. But, One giant of industrial America has fallen..."
   db.push({fileCount:'19', title: 'Neo-Tech',articleSrc: 'articles/2021/11/pt1/neo_tech.html',preview: text, date: "November 1, 2021"});
 
-  var text = "The labor shift hasn’t just been for employers. There's a counter-balancing shift for employees as well. From the employee’s perspective, professional success has become strategic. Rather than deciding what career..."
+  var text = "The labor shift hasn't just been for employers. There's a counter-balancing shift for employees as well. From the employee’s perspective, professional success has become strategic. Rather than deciding what career..."
   db.push({fileCount:'18', title: 'Good Help Pt2',articleSrc: 'articles/2021/10/pt2/good_help_pt2.html',preview: text, date: "October 15, 2021"});
 
   var text = "We've all heard that good help is hard to find. I don't believe that. Good help is easy to find but hard to keep. The labor market has changed faster than many expected. A wave of resignations has taken the country by storm..."
