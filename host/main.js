@@ -26,7 +26,6 @@ const initDB = num => {
   var text = "There are many ways to check the pulse of the economy. Consumer spending. Unemployment rate. Is Inflation above or below expectations? A popular metric is to look to the stock market benchmarks like the S&P 500..."
   db.push({fileCount:'20', title: 'The Energy Dilemma',articleSrc: 'articles/2021/11/pt2/the_energy_dilemma.html',preview: text, date: "November 15, 2021"});
 
-
   var text = "America is a relatively  young country that's rich in innovation. History books are filled with industrialists and innovators from Eli Whitney to Robert Noyce. But, One giant of industrial America has fallen..."
   db.push({fileCount:'19', title: 'Neo-Tech',articleSrc: 'articles/2021/11/pt1/neo_tech.html',preview: text, date: "November 1, 2021"});
 
@@ -241,7 +240,7 @@ const start = () => {
 	//const input1 = document.querySelector("#input1");
   //const input2 = document.querySelector("#input2");
   //if (!input1.value) {
-  	DBSize = 3;
+  	DBSize = 20;
     //input1.value = DBSize;
   //} else {
   	//DBSize = input1.value;
