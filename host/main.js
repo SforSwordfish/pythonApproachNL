@@ -23,7 +23,7 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
-  var text = "If there's one thing the human species craves more than anything else, it’s certainty. The ability to rely and trust on something (or someone) is the cornerstone to a functioning society."
+  var text = "If there's one thing the human species craves more than anything else, it's certainty. The ability to rely and trust on something (or someone) is the cornerstone to a functioning society."
   db.push({fileCount:'21', title: 'Risky Business',articleSrc: 'articles/2021/12/pt1/risky_business.html',preview: text, date: "December 1, 2021"});
 
   var text = "There are many ways to check the pulse of the economy. Consumer spending. Unemployment rate. Is Inflation above or below expectations? A popular metric is to look to the stock market benchmarks like the S&P 500..."
@@ -145,8 +145,33 @@ const getSlidingWindow = isScrollDown => {
 const recycleDOM = firstIndex => {
 	for (let i = 0; i < listSize; i++) {
   	const tile = document.querySelector("#cat-tile-" + i);
+    if (i + firstIndex == DBSize) { break }
     tile.firstElementChild.innerText = DB[i + firstIndex].title;
     tile.lastChild.setAttribute("src", DB[i + firstIndex].imgSrc);
+  }
+}
+
+const recycleDOMBottom = firstIndex => {
+  var lim = Math.min(DBSize-firstIndex,firstIndex+listSize)
+  // console.log('limit')
+  // console.log(lim)
+  var tempList = 0
+  if (firstIndex + listSize > DBSize) {
+    tempList = DBSize - listSize-1
+  } else {
+    tempList = listSize
+  }
+	for (let i = 0; i < tempList; i++) {
+  	const tile = document.querySelector("#cat-tile-" + i);
+    console.log('i val')
+    console.log(i)
+    console.log('first index')
+    console.log(firstIndex)
+    console.log('index val')
+    console.log(i + firstIndex)
+    tile.firstElementChild.innerText = DB[i + firstIndex].title;
+    tile.lastChild.setAttribute("src", DB[i + firstIndex].imgSrc);    // tile.firstElementChild.innerText = DB[i + firstIndex].title;
+    // tile.lastChild.setAttribute("src", DB[i + firstIndex].imgSrc);
   }
 }
 
@@ -250,7 +275,7 @@ const start = () => {
   //}
 
   //if (input2.value < 20) {
-  	listSize = 20;
+  	listSize = 21;
     //input2.value = 20;
   //} else {
   	//listSize = input2.value;
