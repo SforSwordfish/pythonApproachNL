@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "If there’s one thing the human species craves more than anything else, it’s certainty. The ability to rely and trust on something (or someone) is the cornerstone to a functioning society."
+  db.push({fileCount:'21', title: 'Risky Business',articleSrc: 'articles/2021/11/pt2/the_energy_dilemma.html',preview: text, date: "November 15, 2021"});
+
   var text = "There are many ways to check the pulse of the economy. Consumer spending. Unemployment rate. Is Inflation above or below expectations? A popular metric is to look to the stock market benchmarks like the S&P 500..."
   db.push({fileCount:'20', title: 'The Energy Dilemma',articleSrc: 'articles/2021/11/pt2/the_energy_dilemma.html',preview: text, date: "November 15, 2021"});
 
@@ -240,7 +243,7 @@ const start = () => {
 	//const input1 = document.querySelector("#input1");
   //const input2 = document.querySelector("#input2");
   //if (!input1.value) {
-  	DBSize = 20;
+  	DBSize = 21;
     //input1.value = DBSize;
   //} else {
   	//DBSize = input1.value;
