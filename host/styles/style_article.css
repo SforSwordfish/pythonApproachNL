@@ -1,0 +1,117 @@
+/* html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+} */
+
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+body { height: 100% !important; margin: auto !important; padding: 0 !important; width: 100% !important; }
+
+/* h1 {
+  font-size: 60px;
+  text-align: center;
+} */
+a {
+  padding-top: 10px;
+  margin: 100px 0px 0px 20px;
+}
+
+p {
+  /* word-break:break-all; */
+
+  /* line-height: 1;
+  letter-spacing: 1px; */
+}
+li {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: 0px 0px 0px 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0px;
+}
+
+
+html {
+  background-color: white;
+}
+
+body {
+  /* width: 700px;
+  margin: 0 auto; */
+  /* background-color: #ccd6db; /*Blue grey*/
+  /* background-color: white
+  padding: 0 20px 20px 20px; */
+  /* border: 2px solid black; */
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  /* color: #00539F; */
+  color: #000000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+  margin: 8px 0;
+  text-align: center;">
+  /* text-shadow: 3px 3px 1px black; */
+}
+
+img {
+  /* display: block;
+  margin: 0 auto; */
+}
+
+.cat-list {
+  overflow: scroll;
+  list-style-type: none;
+  padding: 0;
+  /* background-color: #65A2A9 ; */
+}
+
+.cat-tile {
+  /* margin: 10px 0; */
+  position: relative;
+  margin: 15px auto;
+  /* height: 120px; */
+  height: 72px;
+  width: 95%;
+  /* background-color: #B1B6B7; */
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px #888888;
+  border-radius: 15px;
+}
+
+
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* These rules set the link and hover states, making it clear that links are, in fact, links. */
+/* Embrace established conventions like underlines on links to keep emails accessible. */
+a {font-size: 20px; color: #B200FD; font-weight: 600; text-decoration: underline; }
+/* a {color: inherit !important; text-decoration: underline;} */
+a:hover { color: #000000 !important; text-decoration: none !important; }
+
+/* These rules adjust styles for desktop devices, keeping the email responsive for users. */
+/* Some email clients don't properly apply media query-based styles, which is why we go mobile-first. */
+@media screen and (min-width:600px) {
+    h1 { font-size: 48px !important; line-height: 48px !important; }
+    .intro { font-size: 24px !important; line-height: 36px !important; }
+}
