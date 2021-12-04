@@ -23,11 +23,11 @@ a {
 
 p {
   /* word-break:break-all; */
-  /* text-overflow: ellipsis; */
-  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   width: 95%;
-  height: 65px;
+  height: 60px;
   margin: 5px 0px 0px 20px;
   font-size: 16px;
   /* line-height: 1;
@@ -89,11 +89,12 @@ img {
   /* margin: 10px 0; */
   position: relative;
   margin: 15px auto;
-  height: 120px;
+  /* height: 120px; */
+  height: 72px;
   width: 95%;
   /* background-color: #B1B6B7; */
   background-color: white;
-  box-shadow: 0px 0px 8px 4px #888888;
+  box-shadow: 0px 0px 2px 2px #888888;
   border-radius: 15px;
 }
 
@@ -110,7 +111,8 @@ a[x-apple-data-detectors] {
 
 /* These rules set the link and hover states, making it clear that links are, in fact, links. */
 /* Embrace established conventions like underlines on links to keep emails accessible. */
-a {font-size: 20px; color: #B200FD; font-weight: 600; text-decoration: underline; }
+/* a {font-size: 20px; color: #B200FD; font-weight: 600; text-decoration: underline; } */
+a {font-size: 20px; color: inherit !important; font-weight: 600; text-decoration: underline;}
 a:hover { color: #000000 !important; text-decoration: none !important; }
 
 /* These rules adjust styles for desktop devices, keeping the email responsive for users. */
