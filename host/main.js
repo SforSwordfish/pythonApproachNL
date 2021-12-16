@@ -98,7 +98,7 @@ const initList = num => {
 
   for (let i = 0; i < num; i++) {
   	const tile = document.createElement("LI");
-    console.log(DB[i].articleSrc)
+    // console.log(DB[i].articleSrc)
     tile.setAttribute("class", "cat-tile");
     tile.setAttribute("id", "cat-tile-" + i);
     const title = document.createElement("a");
