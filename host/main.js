@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "This house is not a home. It's a speculative asset. The U.S. Housing Market has been on fire since COVID-19 made headlines last year. As many young and middle aged working adults were forced to work from home, a resurgence in suburbia boomed."
+  db.push({fileCount:'22', title: "This House isn't a Home",articleSrc: 'articles/2021/12/pt1/House_isnt_a_home.html',preview: text, date: "December 15, 2021"});
+
   var text = "If there's one thing the human species craves more than anything else, it's certainty. The ability to rely and trust on something (or someone) is the cornerstone to a functioning society."
   db.push({fileCount:'21', title: 'Risky Business',articleSrc: 'articles/2021/12/pt1/risky_business.html',preview: text, date: "December 1, 2021"});
 
@@ -268,14 +271,14 @@ const start = () => {
 	//const input1 = document.querySelector("#input1");
   //const input2 = document.querySelector("#input2");
   //if (!input1.value) {
-  	DBSize = 21;
+  	DBSize = 22;
     //input1.value = DBSize;
   //} else {
   	//DBSize = input1.value;
   //}
 
   //if (input2.value < 20) {
-  	listSize = 21;
+  	listSize = 22;
     //input2.value = 20;
   //} else {
   	//listSize = input2.value;
