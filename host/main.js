@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "A collection of Good Reads from 2021."
+  db.push({fileCount:'23', title: "2021 Good Reads",articleSrc: 'articles/2022/01/pt1/2021_good_reads.html',preview: text, date: "January 1, 2022"});
+
   var text = "This house is not a home. It's a speculative asset. The U.S. Housing Market has been on fire since COVID-19 made headlines last year. As many young and middle aged working adults were forced to work from home, a resurgence in suburbia boomed."
   db.push({fileCount:'22', title: "This House isn't a Home",articleSrc: 'articles/2021/12/pt1/House_isnt_a_home.html',preview: text, date: "December 15, 2021"});
 
