@@ -24,13 +24,13 @@ const initDB = num => {
   //   })
   // }
   var text = "Billionaries aren't the only ones not paying taxes."
-  db.push({fileCount:'24', title: "Tax Dodgers",articleSrc: 'articles/2022/01/pt2/tox_dodgers.html',preview: text, date: "January 15, 2022"});
+  db.push({fileCount:'24', title: "Tax Dodgers",articleSrc: 'articles/2022/01/pt2/tax_dodgers.html',preview: text, date: "January 15, 2022"});
 
   var text = "A collection of Good Reads from 2021."
   db.push({fileCount:'23', title: "2021 Good Reads",articleSrc: 'articles/2022/01/pt1/2021_good_reads.html',preview: text, date: "January 1, 2022"});
 
   var text = "This house is not a home. It's a speculative asset. The U.S. Housing Market has been on fire since COVID-19 made headlines last year. As many young and middle aged working adults were forced to work from home, a resurgence in suburbia boomed."
-  db.push({fileCount:'22', title: "This House isn't a Home",articleSrc: 'articles/2021/12/pt1/House_isnt_a_home.html',preview: text, date: "December 15, 2021"});
+  db.push({fileCount:'22', title: "This House isn't a Home",articleSrc: 'articles/2021/12/pt2/House_isnt_a_home.html',preview: text, date: "December 15, 2021"});
 
   var text = "If there's one thing the human species craves more than anything else, it's certainty. The ability to rely and trust on something (or someone) is the cornerstone to a functioning society."
   db.push({fileCount:'21', title: 'Risky Business',articleSrc: 'articles/2021/12/pt1/risky_business.html',preview: text, date: "December 1, 2021"});
