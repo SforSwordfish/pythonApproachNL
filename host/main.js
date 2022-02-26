@@ -24,6 +24,12 @@ const initDB = num => {
   //   })
   // }
   var text = "Billionaries aren't the only ones not paying taxes."
+  db.push({fileCount:'26', title: "Aging",articleSrc: 'articles/2022/02/pt2/aging.html',preview: text, date: "February 15, 2022"});
+
+  var text = "Billionaries aren't the only ones not paying taxes."
+  db.push({fileCount:'25', title: "The Stateless",articleSrc: 'articles/2022/02/pt1/the_stateless.html',preview: text, date: "February 1, 2022"});
+
+  var text = "Billionaries aren't the only ones not paying taxes."
   db.push({fileCount:'24', title: "Tax Dodgers",articleSrc: 'articles/2022/01/pt2/tax_dodgers.html',preview: text, date: "January 15, 2022"});
 
   var text = "A collection of Good Reads from 2021."
@@ -277,7 +283,7 @@ const start = () => {
 	//const input1 = document.querySelector("#input1");
   //const input2 = document.querySelector("#input2");
   //if (!input1.value) {
-  	DBSize = 24;
+  	DBSize = 26;
     //input1.value = DBSize;
   //} else {
   	//DBSize = input1.value;
