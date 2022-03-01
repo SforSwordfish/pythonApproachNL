@@ -23,10 +23,13 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
-  var text = "Billionaries aren't the only ones not paying taxes."
+  var text = "The Eastern Hemisphere is reinventing itself."
+  db.push({fileCount:'27', title: "Aging",articleSrc: 'articles/2022/03/pt1/the_new_east.html',preview: text, date: "March 1, 2022"});
+
+  var text = " This week a colleague, who commited 40 years to the organization, left for retirement."
   db.push({fileCount:'26', title: "Aging",articleSrc: 'articles/2022/02/pt2/aging.html',preview: text, date: "February 15, 2022"});
 
-  var text = "Billionaries aren't the only ones not paying taxes."
+  var text = "Billionaires are so mobile, they’re now stateless."
   db.push({fileCount:'25', title: "The Stateless",articleSrc: 'articles/2022/02/pt1/the_stateless.html',preview: text, date: "February 1, 2022"});
 
   var text = "Billionaries aren't the only ones not paying taxes."
@@ -283,7 +286,7 @@ const start = () => {
 	//const input1 = document.querySelector("#input1");
   //const input2 = document.querySelector("#input2");
   //if (!input1.value) {
-  	DBSize = 26;
+  	DBSize = 27;
     //input1.value = DBSize;
   //} else {
   	//DBSize = input1.value;
