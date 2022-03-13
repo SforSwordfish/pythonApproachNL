@@ -24,7 +24,7 @@ const initDB = num => {
   //   })
   // }
   var text = "The Eastern Hemisphere is reinventing itself."
-  db.push({fileCount:'27', title: "Aging",articleSrc: 'articles/2022/03/pt1/the_new_east.html',preview: text, date: "March 1, 2022"});
+  db.push({fileCount:'27', title: "The New East",articleSrc: 'articles/2022/03/pt1/the_new_east.html',preview: text, date: "March 1, 2022"});
 
   var text = " This week a colleague, who commited 40 years to the organization, left for retirement."
   db.push({fileCount:'26', title: "Aging",articleSrc: 'articles/2022/02/pt2/aging.html',preview: text, date: "February 15, 2022"});
