@@ -23,6 +23,12 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "Empathy... a revisit"
+  db.push({fileCount:'30', title: "Empathy",articleSrc: 'articles/2022/04/pt2/empathy.html',preview: text, date: "April 15, 2022"});
+
+  var text = "Inertia is hard thing to overcome"
+  db.push({fileCount:'29', title: "Inertia",articleSrc: 'articles/2022/04/pt1/inertia.html',preview: text, date: "April 1, 2022"});
+
   var text = "America is out of the energy business."
   db.push({fileCount:'28', title: "Shale",articleSrc: 'articles/2022/03/pt2/shale.html',preview: text, date: "March 15, 2022"});
 
@@ -71,7 +77,7 @@ const initDB = num => {
   var text = "As in, if it'ss only a year old, you could sell it for more than you paid for it. Naturally as a scavenger for a good deal, I went to find out. The rumors were true. After some back and forth haggling, I was looking at... "// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'13', title: 'Volume XII',articleSrc: 'articles/2021/08/pt1/inflation.html',preview: text, date: "August 1, 2021"});
 
-  var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience.Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
+  var text = "I recently returned from Europe. My first trip outside of the country, and an eye opening experience. Many Europeans view America with such optimism... It's admirable..."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
   db.push({fileCount:'12', title: 'Volume XI',articleSrc: 'articles/2021/07/pt2/the_american_reality.html',preview: text, date: "July 15, 2021"});
 
   var text = "The past year and a half has been the most mentally and financially challenging in recent memory. But, the end is near...."// beast. Capable of sucking the emotional and financial resources from even the most pre"//, and this list goes on.
