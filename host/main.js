@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "It's a thin line between fact and fiction."
+  db.push({fileCount:'31', title: "Fact Vs Fiction",articleSrc: 'articles/2022/05/pt1/fact_vs_fiction.html',preview: text, date: "May 1, 2022"});
+
   var text = "Empathy... a revisit"
   db.push({fileCount:'30', title: "Empathy",articleSrc: 'articles/2022/04/pt2/empathy.html',preview: text, date: "April 15, 2022"});
 
