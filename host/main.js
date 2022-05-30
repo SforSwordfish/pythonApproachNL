@@ -23,6 +23,9 @@ const initDB = num => {
   //     imgSrc: _getCatImg()
   //   })
   // }
+  var text = "Freedom of speech is the right to express opinions or ideas without government restraint."
+  db.push({fileCount:'32', title: "Fact Vs Fiction",articleSrc: 'articles/2022/05/pt2/freedom_of_speech.html',preview: text, date: "May 15, 2022"});
+
   var text = "It's a thin line between fact and fiction."
   db.push({fileCount:'31', title: "Fact Vs Fiction",articleSrc: 'articles/2022/05/pt1/fact_vs_fiction.html',preview: text, date: "May 1, 2022"});
 
